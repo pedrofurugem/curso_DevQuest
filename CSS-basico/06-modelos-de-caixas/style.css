@@ -1,0 +1,13 @@
+/* afeta todos os elementos que estão na tela
+* {
+    margin 0px;
+    padding: 0px;
+}*/
+
+p {
+    margin: 20px;
+    padding: 10px;
+
+    border: 1px solid black;
+    background-color: aqua;
+}

@@ -1,0 +1,8 @@
+.produto {
+    background-color: aqua;
+}
+
+/*só span da classe produto*/
+.produto span {
+    font-size: 24px;
+}

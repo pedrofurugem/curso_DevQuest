@@ -1,0 +1,50 @@
+Planejamento objetivo/meta
+
+1 curto prazo
+  medio prazo
+
+2-modulos 1 ao 2
+
+3- Desafio
+
+4-JS
+
+5-Projeto
+
+6-Js anavançado
+    (React)
+7- Testes
+
+8-Marketing Pessoal
+
+9-Arrumar trampo
+
+#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#
+
+​🎯 MARCO NÚMERO 1 - pensar nos teus objetivos de curto e médio prazo.
+Por exemplo, um objetivo de curto prazo pode ser criar minha 
+primeira página com HTML e CSS em 3 semanas.
+E um objetivo de médio prazo pode ser terminar todo o curso do DevQuest em 3 meses.
+
+​🎯 MARCO NÚMERO 2 - estudar e fazer resumos dos módulos 1 a 10, sem pular nenhum.
+
+​🎯 MARCO NÚMERO 3 - fazer o desafio do módulo 11 e mandar pra gente avaliar.
+
+​🎯 MARCO NÚMERO 4 - estudar a base do JS nos módulos de JS básico e intermediário.
+
+​🎯 MARCO NÚMERO 5​ - aplicar o que aprendeu no Projeto do módulo 18.
+
+​🎯 MARCO NÚMERO 6​ - estudar o JS avançado, React e Redux e aplicar tudo isso 
+em um projeto completo.
+
+​🎯 ​MARCO NÚMERO 7 - aprender sobre as bibliotecas de testes de JavaScript
+ e aplicar isso no nosso projeto.
+
+​🎯 MARCO NÚMERO 8​ - estudar todo o módulo de marketing pessoal e fazer um resumo.
+
+​🎯 MARCO NÚMERO 9​ - aplicar pra todas as vagas de júnior que encontrar e ser aprovado, 
+depois é só nos avisar que conseguiu e comemorar! 
+
+
+1- HTML CSS, JS
+2- React

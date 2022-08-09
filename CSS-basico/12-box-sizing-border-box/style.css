@@ -1,0 +1,28 @@
+div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid green
+}
+
+.com-border-box {
+    background-color: aquamarine;
+    box-sizing: border-box; /*ele ja faz o calculo automatico
+    100- 40 = 60*/
+}
+
+.sem-border-box{
+    background-color: brown;
+}
+
+
+/*largura(100)+ padding esquerdo(10) + padding direito(10) +
+border esquerdo(10) + border direito(10) = largura total do elemento
+100 + 10 + 10 + 10 + 10 = 140
+*/
+
+/*
+altura(100)+ padding esquerdo(10) + padding direito(10) +
+border esquerdo(10) + border direito(10) = altura total do elemento
+100 + 10 + 10 + 10 + 10 = 140
+*/

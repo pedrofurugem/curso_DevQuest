@@ -1,0 +1,28 @@
+/*toda a folha/pagina*/
+html {
+    background-color: #ccc;
+    /*font-size: 32px;*/
+    /*rem exemplo*/
+    font-size: 32px;
+}
+
+/* 1em = 16px pixels, é o padrão do html*/
+/*todo o corpo*/
+body {
+    background-color: blueviolet;
+    width: 50%; /*aqui eles respeitam a largura pai e filha*/
+    font-size: 3rem; /*rem vai de acordo com a raiz/ 32px*/
+}
+
+.pai {
+    /*em olha para o valor do pai para definir a filha*/
+    background-color: #ea80fc;
+    width: 50%; /*leva em consideração a proporção do pai*/
+    font-size: 1.5rem;
+}
+
+.filha {
+    background-color: #1de9b6;
+    width: 50%;
+    font-size: 0.5rem;
+}

@@ -1,0 +1,29 @@
+/*
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 30px;
+margin-right: 30px;
+*/
+
+p {
+    margin: 30px 15px;
+    padding: 20px 15px 20px 8px;
+    background-color: yellow;
+    color: black;
+    /*
+    border-style: solid;
+    border-width: 20px;
+    border-color: orange;
+    */
+    border: 20px dashed red;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 20px;
+    /*border-top-color: blue;
+    border-bottom-color: red;
+    border-left-color: cyan;
+    border-right-color: yellow;*/
+    border-color: blue green red yellow;
+}

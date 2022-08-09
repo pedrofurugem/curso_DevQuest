@@ -1,0 +1,14 @@
+/*
+#descricao, #descricao-preco {
+    background-color: orange;
+}*/
+
+.descricao-produto {
+    background-color: yellow;
+    border: 10px solid green
+}
+
+.promocao {
+    background-color: green;
+
+}

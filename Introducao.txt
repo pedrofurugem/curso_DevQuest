@@ -1,0 +1,37 @@
+3 pilares 
+
+1-Planejamento
+2-Prática
+3-Marketing pessoal
+
+1-PLANEJAMENTO
+a.area
+b.linguagem
+c.objetivos
+
+2-PRÁTICA(pondo em prática coisa do pilar do planejamento)
+a.linha de comando
+b.git/github
+c.codigo
+d.projetos no mundo real
+e.testes de software
+f.cleam code
+g.conteúdo de tecnologia
+h.teste técnico
+
+MARKETING PESSOAL
+1-cv
+a-linkeding
+b-portfólio
+c-github
+d-soft-skills
+e-Entrevistas
+
+
+mentoria receberei nos e-mails
+
+
+-Clareza 
+-Planejamento
+-Mentores
+
