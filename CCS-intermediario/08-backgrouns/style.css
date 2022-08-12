@@ -1,0 +1,43 @@
+
+p {
+    color: coral;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*.bg = fundo e .bg-image=imagem por cima*/
+
+.bg {
+    background-color: lightgreen;
+    background-image: url('./images/cat.png');
+}
+
+.bg-image {
+    width: 513px;
+    height: 340px;
+}
+/*não permitir*/
+.bg-repeat {
+    background-repeat: no-repeat;
+    height: 540px;
+}
+/*cover cobre toda a area*/
+.bg-size-cover {
+    background-size: cover;
+    height: 540px;
+}
+/*efeito paralax*/
+.bg-fixed {
+    background-attachment: fixed;
+    height: 540px;
+}
+
+.bg-position {           /*posso usar também 20px 20%*/
+   /* background-position: bottom right;
+    background-repeat: no-repeat;*/
+    height: 540px;
+    /*outro exemplo
+    cor de fundo  imagem repetir ou não posicionamento*/
+    background: #000 url('./images/cat.png')
+    no-repeat right top;
+}

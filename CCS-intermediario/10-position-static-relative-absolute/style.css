@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+}
+
+.elemento {
+    color: #fff;
+    font-size: 32px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*este elemento fica travado na tela
+ qualquer tipo de elemento
+*/
+.elemento-estatico {
+    position: static;
+    background-color: crimson;
+}
+
+/*posicionando relativamente onde foi criado em nossa tela
+em cima de outro elemento estático
+*/
+.elemento-relativo {
+    position: relative;
+    left: 100px;
+    background-color: coral;
+}
+
+/*destacando o elemento da camada padrão
+ele fica em cima da camada antiga
+esta em cima da camada crimson
+(outro elemento absoluto)
+*/
+.elemento-absoluto {
+    position: absolute;
+    background-color: darkcyan;
+    left: 100px;
+    /*top: 0;*/
+}
+ /*a div pai esta em uma 
+ posição relativa de onde criamos*/
+.elemento-relativo-com-filho {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(214, 212, 212);
+}
+
+/*essa div esta travada dentro do elemento pai
+Sempre devo ter um position relative para sobrepor
+o absolute
+*/
+.elemento-absoluto-com-pai {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 25%;
+    top: 25%;
+    background-color: cyan;
+}

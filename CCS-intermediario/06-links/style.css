@@ -1,0 +1,22 @@
+/*estilizando um link e exibindo seus evento/pseudo-classes */
+a {
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px;
+}
+/*-----pseudo classes------*/
+
+/*depois de clicado/visitado*/
+a:visited {
+    color: orange;
+}
+/*clicando em cima dele*/
+a:active {
+    color: red;
+}
+
+/*quando o mouse esta em cima*/
+a:hover {
+    background-color: red;
+    color: white;
+}

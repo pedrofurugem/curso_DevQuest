@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 24px;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+/*os elemntos ocupam a largura total da cara*/
+.em-bloco li {
+    display: block;
+    background: aqua;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+/*elementos um do lado do outro mas não vão poder 
+ter altura e largura*/
+.em-linha li {
+    display: inline;
+    background-color: aqua;
+}
+
+/*nos permite colocar uma largura e altura*/
+.em-linha-e-bloco li {
+    display: inline-block;
+    background: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+/*esconder um elemento na tela*/
+.encoder li {
+   display: none; 
+   background: aqua;
+    width: 100px;
+    height: 100px;
+}

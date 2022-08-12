@@ -1,0 +1,10 @@
+/*os icones são fontes*/
+.fa-facebook {
+    color: orange;
+    font-size: 40px;
+}
+
+
+.fa-facebook:hover {
+    color: red;
+}

@@ -1,0 +1,26 @@
+/*  Efeito Cascata
+.container-cascata {
+    background-color: aqua;
+}
+
+
+.container-cascata {
+    background-color: orange;
+}
+*/
+/*o css funciona de cima pra baixo*/
+
+
+/*---------Espeficidade-----------*/
+/*seletor do id tem mais peso 1, 0, 0*/
+#meu-paragrafo {
+    background-color: violet !important;
+}
+
+.container-especifidade p {
+    background-color: chartreuse;
+}
+
+p {
+    background-color: lightskyblue;
+}

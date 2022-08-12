@@ -1,0 +1,16 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+
+    font-size: 24px;
+    /*
+      weight = peso da fonte
+      100-400 = fonte com estilo normal
+      500-700 = fonte bold
+      700-900 = extra bold
+    */
+    font-weight: 700;
+}
