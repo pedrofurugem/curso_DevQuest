@@ -1,0 +1,17 @@
+.flex {
+    height: 600px;
+    width: 100%;
+    background-color: violet;
+    /*
+    display:inline-block;]display: flex;
+    */
+    display: flex;
+    /*horizontalmente*/
+    justify-content: center;
+    /*verticalmente*/
+    align-items: center;
+}
+
+.flex h2{
+    font-size: 60px;
+}

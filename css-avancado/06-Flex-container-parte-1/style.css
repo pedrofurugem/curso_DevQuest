@@ -1,0 +1,21 @@
+/*todos os elemento na classe div serão flex items*/
+/*flex direction*/
+/*
+    column
+    row-reverse
+    column-reverse
+    */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+}
+
+.container  div {
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}

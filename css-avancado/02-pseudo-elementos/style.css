@@ -1,0 +1,43 @@
+/*
+seletroes te :: dois pontos
+seletor::pseudo-elemento{
+    propriedade: valor:
+}*/
+
+/*estilizando primeira letra*/
+.first-Letter::first-Letter{
+    color: coral;
+}
+
+/*estilizando primeira linha*/
+.first-Line::first-Line{
+    color:blue;
+}
+
+/*estilizando primeira letra*/
+.first-Line::first-Letter{
+    color: coral;
+}
+
+/*estilizando uma lista*/
+li::marker{
+    color: red;
+    font-size: 23px;
+}
+
+/*estilizando conteúdo antes*/
+.before::before{
+    /*background*/
+    content: url(Bart.png) 
+    /*
+    center center 
+    no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 26.4px;*/
+}
+
+.after::after{
+    /*background*/
+    content: url(Bart.png)
+}

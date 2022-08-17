@@ -1,0 +1,32 @@
+/*variáveis podem ter escopo global e local*/
+
+/*raiz do cocumento
+escopo global
+*/
+:root{
+   --cor-padrao: red;
+   --tamanho-fonte-padrao: 30px;
+}
+
+/*criando escopo global*/
+h2 {                       /*se der problema cor azul*/
+    --cor-padrao: green;
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-fonte-padrao);
+    background-color: var(--cor-padrao)
+}
+
+h3 {
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-fonte-padrao);
+}
+
+p {
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-fonte-padrao);
+}
+
+span {
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-fonte-padrao);
+}

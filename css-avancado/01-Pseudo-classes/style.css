@@ -1,0 +1,55 @@
+/*
+seletor:pseudo-classe{
+    propriedade: valor;
+}
+*/
+/*first estiliza só o primeiro*/
+p:first-child{
+    color: aqua;
+}
+
+p:last-child{
+    color: blueviolet;
+}
+ /*todos os paragrafos que não tem a 
+  a classe padrão receberão amarelo
+ */
+p:not(.padrao){
+    color: yellow;
+}
+
+/*estiliza elementos impares*/
+p:nth-child(odd){
+    color: red;
+}
+
+/*estiliza elementos pares*/
+p:nth-child(even){
+    color: blue;
+}
+
+/*estilizando elementos impares da lista*/
+li:nth-child(odd){
+    color: red;
+}
+
+/*estilizando de 3 em 3*/
+li:nth-child(3n){
+    color: green;
+}
+
+/*estilizando ponto a ponto
+do item 2 ao item 5
+*/
+li:nth-child(n+2):nth-child(-n+5){
+    color: violet;
+}
+/*estiliza o ultimo elemento da lista*/
+li:nth-Last-child(1){
+    color: purple;
+}
+
+/*só estiliza quem não tem irmãos*/
+p:only-child{
+    color: red;
+}

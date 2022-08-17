@@ -1,0 +1,19 @@
+img {
+    width: 200px;
+}
+
+img.scale{          
+    /* redimensionando nos eixos x y*/
+    transform: scaleX(2);
+}
+ 
+/*rotaciona nos dois eixos*/
+img.rotate{ 
+    transform: rotate(20deg);
+}
+ 
+/*translação do elemento na tela*/
+img.translate{ 
+    transform: translate(100px, 200px);
+    /*100 no x e 100 no y*/
+}

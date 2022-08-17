@@ -1,0 +1,15 @@
+.container{
+    /*aplicando a propriedade flex np container*/
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 400px;
+   border: 1px solid black;
+}
+
+.item {
+    background-color: rgb(226, 134, 226);
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+    flex: 1;
+}

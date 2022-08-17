@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex items Grow - Basis - Shrink</title>
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Flex items - Grow - Basis - Shrink</h1>
+    <!--
+        grow-0 = cola na borda
+        grow-1 = da espaço
+        grow-2 = da mais espaço
+    -->
+    <section>
+        <h2>Grow</h2>
+        <div class="container">
+            <div class="item grow-0">1</div>
+            <div class="item grow-0">wqqweqw qwrqwrqwr</div>
+            <div class="item grow-0">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Basis</h2>
+        <div class="container">
+            <div class="item grow-1 basis-100">
+                Lorem 123</div>
+            <div class="item grow-1 basis-200">
+                Lorem 123 456</div>
+            <div class="item grow-1 basis-300">
+                Lorem, dasdsasdasd</div>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Shrink</h2>
+        <div class="container shrink">
+            <div class="item shrink-0">Lorem ipsum dolor sit</div>
+            <div class="item shrink-2">Lorem ipsum dolor sit</div>
+            <div class="item shrink-3">Lorem ipsum dolor sit</div>
+        </div>
+    </section>
+
+</body>
+</html>

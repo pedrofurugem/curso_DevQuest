@@ -1,0 +1,28 @@
+/*classe pai: flex*/
+.flex {
+    display: flex;
+    width: 960px;
+    max-width: 100%;
+    /*quebrar a coluna*/
+    flex-wrap: wrap;
+}
+
+.flex img {
+    max-width: 100%;
+}
+/*definir display na coluna*/
+.coluna{
+    display: flex;
+    flex-direction: column;
+    /*para se adquar a tamanho do container
+    flex: 1;*/
+    margin: 1em;
+    /* grow basis Shrink*/
+    flex: 0 1 250px;
+    /*width: 250px;*/
+}
+
+.botao {
+    align-self: flex-start;
+    margin-top: auto; /*fique no topo*/
+}

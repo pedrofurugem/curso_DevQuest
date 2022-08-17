@@ -1,0 +1,69 @@
+/*estilização comum*/
+h1 {
+    color: green
+}
+/*classe*/
+.paragrafo {
+    background-color: blue;
+}
+/*id*/
+#menu {
+    margin-left: 100px;
+    background-color: violet;
+}
+
+/*todos os elementos são paddings*/
+* {
+    padding: 0;
+    font-size: 20px;
+}
+/*classe única*/
+.titulo{
+    font-size: 30px;
+}
+
+/*estilizando elementos de classe dupla*/
+.titulo.laranja{
+    color: orange;
+}
+
+.titulo.vermelho {
+    color: red;
+}
+
+/*estilizando com virgula*/
+p, span {
+    font-size: 10px;
+}
+
+
+/*estilização com classe filha*/
+
+.sobre .texto {
+    color: palevioletred;
+}
+/* 
+com seletor
+estilizando todos os p's dentro da dive
+ pai > filho {
+    propriedade: valor;
+ }
+*/
+div > p {
+   color: purple;
+}
+/*estilizar todos os p's 
+que vem depois de uma tag div*/
+div + p {
+   color: royalblue;
+}
+
+a[target=_blank]{
+    color: red;
+}
+
+/*estilizando todos que tem google.com
+
+a[href=google.com]{
+    color: red;
+}*/
