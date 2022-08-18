@@ -1,0 +1,36 @@
+/*o certo seria usar o media query*/
+@media(max-width: 650px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .menu li {
+        padding: 33px 0;
+    }
+
+    .menu li a{
+        font-size: 4rem;
+        padding: 17px 40px;
+    }
+
+    /*se o margin-top abaixo não funcionar*/
+    .menu li:last-child{
+        margin-top: 10px;
+    }
+
+
+    .menu li a.botao{
+        font-size: 1.8rem;
+        padding: 15px 23px;
+        margin-top: 20px;
+    }
+}

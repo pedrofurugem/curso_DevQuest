@@ -11,6 +11,7 @@
     text-align: center;
 }
 
+/*item1 e item3 tem uma largura maior*/
 .justify-content .item1, 
 .justify-content .item3{
     width: 80px;

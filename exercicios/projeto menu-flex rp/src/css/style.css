@@ -1,0 +1,117 @@
+/*por o tamanho aqui é opcional*/
+html {
+    font-size: 62.5%;
+}
+
+/*adicionando a fonte*/
+body{
+    font-family: 'Public Sans', sans-serif;
+    /*fonte padronizada
+    como no figma*/
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /*add padding*/
+    padding: 45px;
+    /*margin: 30px;*/
+    flex-wrap: wrap;
+    /*align-items: baseline; como fiz*/
+    align-items: center;
+}
+
+/* como fiz
+h1, img{
+    display: flex;
+}*/
+
+/*estilizando a logo*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+
+/*como fis
+ul, li, a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: baseline;
+}
+*/
+
+.menu {
+    display: flex;
+    align-items: center;
+   
+}
+
+.menu li a {
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 2rem;
+}
+
+.menu li a:hover{
+    background-color: #5BC241;
+    color: #FFFF;
+    text-decoration: underline;
+}
+
+/*como fiz
+a:hover{
+    text-decoration: underline;
+    
+}*/
+
+/*comp fiz
+.botao {
+    background-color: #5BC241;
+    color: #FFFF;
+    border-radius: 10px;
+    padding: 10px;
+}*/
+
+/*em vale 10px*/
+.menu li a.botao{
+    background-color: #5BC241;
+    color: #FFFF;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-left: 2rem;
+    padding: 10px 20px;
+}
+
+
+.menu li a.botao:hover{
+    border: 2px solid purple
+}
+
+
+/*fiz errado, era com um transition
+#sobre{
+    background-color: #5BC241;
+    padding: 10px;
+    color: #FFFF;
+
+}*/
+
+/* como fiz a responsividade
+@media(max-width:424px){
+    a {
+        font-size: 2em;
+    }  
+
+}*/

@@ -2,6 +2,7 @@
 .flex {
     display: flex;
     width: 960px;
+    /*para o responsivo*/
     max-width: 100%;
     /*quebrar a coluna*/
     flex-wrap: wrap;
