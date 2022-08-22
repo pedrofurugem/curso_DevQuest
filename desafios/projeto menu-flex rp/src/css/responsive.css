@@ -27,7 +27,7 @@
         margin-top: 10px;
     }
 
-
+    /*para o botão não quebrar*/
     .menu li a.botao{
         font-size: 1.8rem;
         padding: 15px 23px;

@@ -1,0 +1,44 @@
+:root{
+    --font-color:  #fff;
+}
+
+html {
+    font-family: 'Public Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    min-height: 100vh; /*precisa da altura inteira para ele alinhar horizontalmente e verticalmente*/
+    justify-content: center;
+    align-items: center;
+}
+
+.pinturas {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /*usar o gap*/
+    flex-wrap: wrap;
+}
+
+.pintura {
+    display: flex;
+    position: relative;
+}
+
+.obra{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    color: var(--font-color);
+    bottom: 40px;
+    left: 20px;
+}
+
+.autor{
+    font-size: 17px;
+    font-weight: 300;
+    position: absolute;
+    color: var(--font-color);
+    bottom: 20px;
+    left: 20px;
+}

@@ -1,0 +1,11 @@
+/*vai mudar assim que chegar em 1440px*/
+@media(max-width: 1400px){
+    .pinturas{
+        max-width: 900px; /*quero que tenha umar largura maxima de 900px ao chegar em 1440px*/
+        margin: 30px 0;
+        gap: 0px
+    }
+
+  
+
+}
