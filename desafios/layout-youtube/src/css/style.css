@@ -1,0 +1,68 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #F7F7F7;
+    max-width: 900px;
+    display: grid;      /*aqui estou criando uma tabela de 2 linhas e                   2 colunas*/
+    grid-template-areas: "video-destaque propaganda"
+                         "video-destaque videos-sugeridos";
+                         /*1 fração = ocupa todo o resto*/
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    gap: 20px;
+    padding: 35px;
+}
+
+#caixa-video {
+    background-color: #C4C4C4;
+    width: 543px;
+    height: 217px;
+    margin-bottom: 12px;
+}
+
+#caixa-propaganda{
+    background-color: #C4C4C4;
+    width: 270px;
+    height: 56px;
+}
+
+.caixa-video-sugerido{
+    background-color: #C4C4C4;
+    width: 101px;
+    height: 71px;
+}
+
+.video-destaque {
+    grid-area: video-destaque; 
+}
+
+.video-destaque .titulo{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.propaganda {
+   grid-area: propaganda;
+}
+
+.videos-sugeridos {
+    grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.videos-sugeridos .video .titulo{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.videos-sugeridos .video p{
+    font-size: 11px;
+    margin-bottom: 5px;
+}
