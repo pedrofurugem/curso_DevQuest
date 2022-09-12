@@ -35,7 +35,7 @@
     grid:
     "cabecalho cabecalho cabecalho" 200px /*altura*/
     "menu secao-principal aside"  400px
-    "rodape rodape rodape" 250px / 160px auto 160px; /*altura e colunas*/
+    "rodape rodape rodape" 250px / 160px auto 160px; /*larguras*/
 }
 
 .cabecalho{

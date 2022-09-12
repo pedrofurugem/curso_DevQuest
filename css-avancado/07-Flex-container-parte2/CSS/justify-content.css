@@ -1,5 +1,6 @@
 .flex-start {
     justify-content: flex-start;
+    /*padrão*/
 }
 
 .flex-end {
@@ -11,6 +12,7 @@
 }
 
 .space-between{
+    /*distribuídos uniformemente 1 e 3 no canto*/
     justify-content: space-between;
 }
 
@@ -19,5 +21,6 @@
 }
 
 .space-evenly{
+    /*espaços uniformemente iguais*/
     justify-content: space-evenly;
 }

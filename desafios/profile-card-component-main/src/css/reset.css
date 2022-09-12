@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+/*A box-sizing; propriedade nos permite incluir o preenchimento e a borda na largura e altura totais de um elemento.
+
+Se você definir box-sizing: border-box;em um elemento, o preenchimento e a borda serão incluídos na largura e na altura*/
+
+ul {
+    list-style: none;
+}

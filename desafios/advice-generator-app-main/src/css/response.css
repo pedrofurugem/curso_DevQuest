@@ -1,0 +1,14 @@
+/*aqui é min devido ao picture source ter max-width */
+
+@media(min-width: 768px){
+    .advice{
+        padding-inline: 50px;
+        /*O padding-inline adiciona um espaçamento interno tanto na esquerda, quanto direita.*/
+        width: 386px;
+    }
+
+    .advice p {
+        font-size: 21px;
+        padding: 26px;
+    }
+}

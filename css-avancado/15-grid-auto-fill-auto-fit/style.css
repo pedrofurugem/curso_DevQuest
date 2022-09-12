@@ -16,7 +16,7 @@ body{
 }
 
 
-/* usando medi queries
+/* usando media queries
 @media(min-width: 550px){
    .container{
         grid-template-columns: repeat(2, 1fr);

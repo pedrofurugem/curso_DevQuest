@@ -12,7 +12,7 @@
  /*   display: grid;
       com grid template definimos as linhas e as colunas*/
  /*   grid-template-columns: auto auto; /*2 colunas de tamanho alto*/
- /*   grid-template-rows: 50px 150px; /*defini a altura das linhas*/
+ /*   grid-template-rows: 150px 50px; /*defini a altura das linhas*/
 /*}*/
 
 /*forma mais prática*/
@@ -24,6 +24,7 @@
     
     /*podemos abreviar também*/
     /*grid-template: 150px / auto auto;*/
+                      /* linha - row /  coluna - column*/
     grid-template: repeat(1, 150px) / repeat(2, auto);
 
     /*grid-gap: 1px; /*espaçamento entre as celulas*/

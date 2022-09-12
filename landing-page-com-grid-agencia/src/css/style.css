@@ -1,0 +1,296 @@
+/*para facilitar trabalhar com rem*/
+html{
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "hero hero hero hero"
+                         "about about about about"
+                         "services services services services"
+                         "projects projects projects projects"
+                         "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr); /*fração vale 25% */
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/*header*/
+
+.header{
+    background-color: lightgray;
+    grid-area: header;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between; /*epaços entre logo e nav*/
+    align-items: center; /*alinhado ao centro com o menu*/
+    min-height: 75px; /*minimo de altura que ele pode chegar*/
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s; /*tempo pra ele colorir ao passar o mouse*/
+}
+
+/*quando eu passar o mouse no a influenciará o h1(h1 esta dentro de a)*/
+.header a:hover h1 {
+    color: coral;
+}
+
+/*hero*/
+
+.hero{ /* ../ para voltar uma pasta*/
+    grid-area: hero;
+    height: 89vh; /*altura da viewport, 89 pelo conteúdo abaixo*/
+    background: url('../images/lemons.jpg')
+    center center no-repeat;
+/*verticalmente horzontalmente*/
+    background-size: cover; /*imagem se adequa ao tamanho da div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+/*criando a setinha*/
+.hero:after{
+    content: url('../images/seta_preta.png');
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    /*propriedade animation*/
+    animation: downarrow 0.6s
+    infinite alternate ease-in-out;
+}   /*pesquisar sobre ease-in-out e webkit*/
+/*a animação acontece aqui*/
+@-webkit-keyframes downarrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4; }
+    100% { -webkit-transform: translateY(0.4em); opacity: 0.9; }
+}
+
+/*responsividade do hero*/
+@media(max-width: 425px){
+    .hero{
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/*about*/
+
+/*podemos usar grid dentro de outro grid*/
+.about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFF;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+}
+
+.about .item {
+    padding: 20%; /*porcentagem para caber bem ao mobile*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.about .item h3 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about .item p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.about .item .btn-know-more{
+    font-size: 1.6rem;
+}
+
+.about .item .btn-know-more:hover{
+    font-weight: 700;
+    align-self: start;
+}
+
+       /*temos que por junto quando há duas classes*/
+.about .image.right{
+    background: url('../images/bridge.jpg') 
+    center center no-repeat;
+    background-size: cover;
+}
+
+.about .image.left{
+    background: url('../images/sky.jpg') 
+    center center no-repeat;
+    background-size: cover;
+}
+
+.about .image {
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 425px){
+    .about .item{
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/*services*/
+
+.services{
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services .service {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services .service img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.services .service h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.services .service p {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 20px auto 0; /*auto esquerda direita*/
+    line-height: 25px;
+}
+
+.services .service:nth-child(1){
+    background-color: lightskyblue;
+}
+
+.services .service:nth-child(2){
+    background-color: lightpink;
+}
+
+@media(max-width: 425px){
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*projects*/
+
+.projects{
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects img{
+    /*altura e largura da div*/
+   /* width: 100%;*/
+    height: 100%
+}
+
+.projects img{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.projects a:hover img{
+    opacity: 0.8;
+}
+/*tablete*/
+@media (max-width: 768px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 415px){
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: (4, 1fr);
+    }
+}
+
+/*footer*/
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.footer nav{
+    margin: 50px 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul a{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.footer nav ul a:hover{
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.footer .social a:hover{
+    color: #fff;
+}
+
+.footer .social a{
+    margin: 20px;
+}

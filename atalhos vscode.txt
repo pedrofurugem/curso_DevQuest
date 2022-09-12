@@ -1,0 +1,33 @@
+Atalhos windows
+
+tecla Home
+tecla End
+
+Shift + end = seleciona a linha inteira
+
+ctrl + -> , ele pula as letras no texto
+
+ctrl + (esq)shift + -> , seleciona a palavara inteira
+
+atalhos Vs Code
+
+1-ctrl + b = esconde / mostra o menu lateral
+
+2-shift + alt + seta-baixo = duplicar linha
+
+3-alt + seta-baixo = move a linha
+
+4- ctrl + l = seleciona toda a linha
+
+5 - ctrl + p = buscar arquivo por nome
+
+6 - ctrl + f = busca textos no documento atual
+
+7 - ctrl + shift + f = busca textos em todos os documentos
+
+IMPORTANTE 8 = ctrl + shift + l = alterar vários textos iguais ao mesmo tempo
+criando o multicursor
+
+9 - ctrl + ; = adicionar ou remover comentários
+
+10 - ctrl + tab = navega entre abas

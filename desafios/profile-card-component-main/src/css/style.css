@@ -1,0 +1,170 @@
+/*.HSL significa matiz, saturação e leveza - e representa uma representação de cores de coordenadas cilíndricas*/
+
+:root {
+    --background-color: hsl(185, 75%, 39%);
+    --text-color: hsl(227, 10%, 46%);
+    --card-color: hsl(0, 0%, 59%);
+}
+
+body { 
+    background-color: var(--background-color);
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+hr{
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /*pegar 100% da altura, nada de margin-*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px; /*ao inves de usar tanto margin-bottom*/
+    background-color: #fff;
+    border-radius: 10px;
+    width: 330px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .profile-informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px; /*pare de usar margin-bottom*/
+    height: 100%; /*usando 100% da altura*/
+}
+
+.card .profile-informations img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/*
+space-around: os itens são distribuídos igualmente no espaço disponível ao redor deles. 
+space-evenly: os itens são distribuídos igualmente no espaço disponível.
+*/
+
+.card .profile-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; /*usando 100 da largura pra ele centralizar*/
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/*cores e pesos da fonte*/
+
+
+/* hierarquia
+   <ul class="profile-numbers">
+    <li class="info">
+        <p class="counter">8K</p>
+    </li>
+   </ul>
+
+   <div class="card">
+      <div class="profile-informations">
+      <p>Victor Crest</p>
+      </div>
+   </div>   
+*/
+
+.profile-numbers .info .counter, /*uma hierarquia*/
+.card .profile-informations p {  /*outra hierarquia*/
+    font-weight: 700;
+}
+
+/* hierarquia
+
+   .card .profile-informations .age, 
+   <div class="card">
+      <div class="profile-informations">
+      <p> <span class="age">26</span></p>
+      </div>
+   </div>   
+
+   .card .profile-informations .city,
+   <div class="card">
+      <div class="profile-informations">
+      <span class="city">London</span>
+      </div>
+    </div>   
+
+    .profile-numbers .info .counter-type
+    <ul class="profile-numbers">
+    <li class="info">
+        <span class="counter-type">Followers</span>
+    </li>
+   </ul>
+*/
+
+.card .profile-informations .age,
+.card .profile-informations .city,
+.profile-numbers .info .counter-type {
+    color: var(--text-color);
+}
+
+/*body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.card {
+    background-color: hsl(0, 0%, 59%);
+    max-width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 186px;
+}
+
+h1{
+    margin: auto;
+    Font-size: 15px;
+}
+
+.city{
+   margin-bottom: 25px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 65px;
+    border-radius: 50px;
+}
+
+.infos {
+    border-top: 1px solid black;
+    width: 200px;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.info{
+    text-align: center;
+    width: 75px;
+}
+
+.number{
+    font-weight: bold;
+}*/

@@ -1,0 +1,115 @@
+.header nav ul{
+    display: flex;
+}
+
+.header nav ul li a{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 5%;
+    transition: 0.3s;
+}
+
+.header nav ul li a:hover{
+    color: #FFF;
+    background-color: coral;
+}
+
+/* RESPONSIVE, criando menu responsivo*/
+.header .menu{
+    display: none; /*não aparecer*/
+    width: 60px;
+    height: 60px;
+    align-self: flex-end; /*alinhar a direita*/
+}
+
+.header nav label{
+    display: flex;
+    flex-direction: column; 
+}
+
+.header .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    /*posso definir posicionamento com position relative também*/
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out; /*pesquisar*/
+}
+/*posso estilizar os dois ao mesmo tempo*/
+.header .hamburguer:before,
+.header .hamburguer:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    /*pra pegar 100% de altura e largura*/
+    width: 100%;
+    height: 100%;
+    position: absolute; /*para pocisionar os traços*/
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer:before{
+    top: -10px; /*traço cima*/
+}
+
+.header .hamburguer:after{
+    bottom: -10px; /*traço baixo*/
+}
+
+.header input{ 
+    display: none; /*não aparecer no menu aquela bolinha*/
+}
+
+/*definindo a animação*/  /* ~ para mexer no irmão*/
+.header input:checked ~ label .hamburguer { 
+    transform: rotate(45deg);
+}
+
+.header input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+
+@media(max-width: 900px){
+    .header .menu{
+        display: block; /*o elemento ocupará toda a largura do espaço disponível para ele. (uma quebra de linha antes e depois do elemento)*/
+    }
+
+    .header nav ul{
+        display: none; /*remove o elemento completamente do documento*/
+    }
+
+    .header input:checked ~ ul{
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1; /*eixo frente traz*/
+        
+    }
+
+    .header nav ul{
+        width: 200px;
+        background-color: #fff;
+        padding: 20px
+    }
+
+    .header nav ul a{
+        text-align: center;
+        padding: 20px; /*padding não funciona*/
+        display: block; /*pra ele separar*/
+    }
+}
