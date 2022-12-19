@@ -3,7 +3,14 @@ import { CartProductsCounter } from "../cart-products-counter";
 
 import { Link } from 'react-router-dom'
 
+import { useSelector } from 'react-redux'
+
 const Header = () => {
+  //usar um hook aqui
+  const cartProducts = useSelector(state => state.cartProducts)
+  console.log('cartProducts: ', cartProducts)
+
+
   return (
     <Container>
       <Link to="/">

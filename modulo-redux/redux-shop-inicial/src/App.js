@@ -2,15 +2,21 @@ import { Header } from "./components/header";
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./pages/routes";
+//importar o provider do redux
+import { Provider } from 'react-redux'
+//importar o store
+import store from './store/store'
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
-        <Header />
-        <AppRoutes />
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Header />
+          <AppRoutes />
+        </BrowserRouter>
+      </Provider>
     </>
   );
 }
