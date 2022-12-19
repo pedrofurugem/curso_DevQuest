@@ -1,0 +1,51 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.container{
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--advice-card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 345px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card .advice-id {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: var(--advice-dice-color);
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.card .mensage {
+    color: var(--text-color);
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+.card .btn-icon {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--advice-dice-color);
+    transform: translateY(50%);
+}
+
+.card .btn-icon:hover{
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}

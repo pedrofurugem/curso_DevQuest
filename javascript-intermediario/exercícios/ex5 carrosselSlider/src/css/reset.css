@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+O opacity faz o elemento ficar sem visibilidade, 
+mas elea inda está ali, ocupando espaço.
+
+O z-index faz com que o elemento saia da sua 
+camada original e venha pra frente ou pra trás.
+
+opacity: 0 (elemento fica invisível)
+Do 0 ao 1... subindo, ele vai aparecendo aos poucos.
+z-index: 1 (o elemento vem pra frente, sobe uma camada)
+z-index: -1 (o elemento vai pra trás, desce uma camada)
+
+JS
+ verificação - if
+ esconder  - classList.remove
+ contar - ++, --
+ mostrar - classList.add
+
+*/

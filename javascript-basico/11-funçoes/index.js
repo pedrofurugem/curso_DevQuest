@@ -47,3 +47,21 @@ console.log(resultadoDaSoma) //4
 
 resultadoDaSoma = soma(resultadoDaSoma, 10)
 console.log(resultadoDaSoma) //14
+
+
+function multiplica3numeros(n1, n2, n3){
+    return n1 * n2 * n3
+}
+
+multiplica3numeros(1, 2, 4)
+
+resultFuncao = multiplica3numeros(1, 2, 3)
+console.log("resultado = " + resultFuncao)
+
+function fatorial(n){
+    if(n<=1) return 1
+    return n * fatorial(n-1)
+
+}
+
+console.log(fatorial(5))

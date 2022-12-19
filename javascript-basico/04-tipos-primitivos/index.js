@@ -4,7 +4,7 @@ Number
 Boolean
 Null
 Undefined
-Symbol
+Symbol**
 */
 
 //tipo primitivo string "" ''

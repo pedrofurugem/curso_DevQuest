@@ -16,6 +16,7 @@ mensagem dizendo "O boleto não está pago";
 
 let boletoPago = false;
 
+//não precisa colocar true if(boletopago)
 if(boletoPago == true){
     console.log('O boleto está pago')
 }

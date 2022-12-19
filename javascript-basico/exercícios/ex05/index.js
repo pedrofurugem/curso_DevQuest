@@ -7,7 +7,7 @@ dentro do laço:
 "O dobro do número x é y"
 
 */
-
+//como fiz
 let n = 0
 while(n <= 10){
     dobro = n * 2;
@@ -15,4 +15,8 @@ while(n <= 10){
     n++;
 }
 
-/*treinando do while */
+/*fazendo com for */
+for (let index = 0; index <= 10; index++) {
+    //const dobro = index * 2
+    console.log('O dobro do número ' + index + ' é ' + index * 2)
+}

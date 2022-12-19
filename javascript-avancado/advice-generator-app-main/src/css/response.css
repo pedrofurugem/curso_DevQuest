@@ -1,0 +1,11 @@
+@media(min-width: 768px){
+    .card {
+        padding-inline: 50px;
+        width: 486px;
+    } /*O padding-inline adiciona um espaçamento interno tanto na esquerda, quanto direita.*/
+
+    .card .mensage {
+        font-size: 21px;
+        padding: 26px;
+    }
+}

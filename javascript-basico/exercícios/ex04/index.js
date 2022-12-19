@@ -8,3 +8,4 @@ seguinte mensagem para cada número dentro do laço.
 for(let n=0; n<=10; n++){
     console.log("O número atual é o " + n)
 }
+

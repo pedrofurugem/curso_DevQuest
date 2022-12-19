@@ -1,0 +1,71 @@
+.container {
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container .acordeon {
+    background-color: #FCFCFC;
+    display: flex;
+    align-items: center;
+    width: 655px;
+    height: 347px;
+    border-radius: 21px;
+    position: relative
+}
+
+img {
+    position: absolute;
+    left: -14%
+}
+
+.acordeon .conteudo {
+    margin-left: 228px;
+}
+
+.conteudo .titulo {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.conteudo .items .item {
+    border-bottom: 1px solid #D4D4D4;
+    width: 390px;
+    background-image: url('../images/seta.png');
+    background-repeat: no-repeat;
+    background-position: top 5px right;
+    margin-bottom: 10px
+}
+
+.conteudo .items .item:last-child{
+    border-bottom: none;
+}
+
+.conteudo .items .item .pergunta{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.conteudo .items .item .resposta{
+    font-weight: 300;
+    font-size: 15px;
+    width: 347px;
+    display: none;
+}
+
+.items .item.ativo h2 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.items .item.ativo .resposta {
+    display: block;
+}
+
+.items .item.ativo  {
+    background-image: url('../images/seta_aberta.png');
+}
